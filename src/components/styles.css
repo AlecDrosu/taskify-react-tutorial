@@ -1,0 +1,111 @@
+.input {
+    display: flex;
+    width: 90%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.input__box {
+    width: 100%;
+    border-radius: 50px;
+    padding: 20px 30px;
+    font-size: 1.5rem;
+    border: none;
+    transition: 0.2s;
+    box-shadow: inset 0 0 5px black;
+}
+
+.input__box:focus {
+    box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+.input_submit {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 12px;
+    border-radius: 50%;
+    border: none;
+    right: 0px;
+    font-size: 15px;
+    background-color: #2f74c0;
+    color: white;
+    transition: 0.2s all;
+    box-shadow: 0 0 10px black;
+}
+
+.input_submit:hover {
+    background-color: #388ae2;
+}
+.input_submit:active {
+    transform: scale(0.8);
+    box-shadow: 0 0 5px black;
+}
+
+.todos {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    align-items: center;
+}
+
+.todos__single {
+    display: flex;
+    border: 1px solid yellow;
+    width: 40%;
+    justify-content: space-between;
+    /* having flex=1 also seems to work */
+    padding: 20px;
+    background-color: #cd82f5;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.todos__single--text {
+    font-size: 1.5rem;
+    border: 1px solid yellow;
+    display: flex;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    border: 1px solid yellow;
+    justify-content: center;
+    align-items: center;
+    margin: none;
+    padding: none;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 700px) {
+    .input {
+        width: 95px;
+    }
+    .todos {
+        width: 95%;
+    }
+    .todos__single {
+        width: 100%;
+    }
+}
+
+.input__todo {
+    width: 70%;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.3rem;
+    padding: 4px;
+    background-color: #c469f5;
+}
